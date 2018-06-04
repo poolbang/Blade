@@ -6,15 +6,15 @@
  * Time: 0:29
  */
 
-namespace Swoft\Blade\Bootstrap;
+namespace Poolbang\Blade\Bootstrap;
 
 use Swoft\Bean\Annotation\BootBean;
-use Swoft\Blade\Factory;
-use Swoft\Blade\Compilers\BladeCompiler;
-use Swoft\Blade\Engines\CompilerEngine;
-use Swoft\Blade\Engines\EngineResolver;
-use Swoft\Blade\Filesystem;
-use Swoft\Blade\FileViewFinder;
+use Poolbang\Blade\Factory;
+use Poolbang\Blade\Compilers\BladeCompiler;
+use Poolbang\Blade\Engines\CompilerEngine;
+use Poolbang\Blade\Engines\EngineResolver;
+use Poolbang\Blade\Filesystem;
+use Poolbang\Blade\FileViewFinder;
 
 /**
  * @BootBean()

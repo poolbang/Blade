@@ -1,6 +1,6 @@
 <?php
 
-namespace Swoft\Blade\Support;
+namespace Poolbang\Blade\Support;
 
 use ArrayAccess;
 

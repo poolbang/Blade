@@ -1,6 +1,6 @@
 <?php
 
-namespace Swoft\Blade\Engines;
+namespace Poolbang\Blade\Engines;
 
 use Closure;
 use InvalidArgumentException;
@@ -36,7 +36,7 @@ class EngineResolver
     /**
      * Resolver an engine instance by name.
      * @param  string $engine
-     * @return \Swoft\Blade\Engines\EngineInterface
+     * @return \Poolbang\Blade\Engines\EngineInterface
      * @throws \InvalidArgumentException
      */
     public function resolve($engine)

@@ -6,11 +6,11 @@
  * Time: 0:18
  */
 
-namespace Swoft\Blade\Bean\Wrapper\Extend;
+namespace Poolbang\Blade\Bean\Wrapper\Extend;
 
 
 use Swoft\Bean\Wrapper\Extend\WrapperExtendInterface;
-use Swoft\Blade\Bean\Annotation\Blade;
+use Poolbang\Blade\Bean\Annotation\Blade;
 /**
  * Controller extend
  */

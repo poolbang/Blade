@@ -1,6 +1,6 @@
 <?php
 
-namespace Swoft\Blade;
+namespace Poolbang\Blade;
 
 class ViewName
 {

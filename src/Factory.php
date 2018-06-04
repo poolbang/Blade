@@ -1,12 +1,12 @@
 <?php
 
-namespace Swoft\Blade;
+namespace Poolbang\Blade;
 
-use Swoft\Blade\Support\Arr;
-use Swoft\Blade\Support\Str;
+use Poolbang\Blade\Support\Arr;
+use Poolbang\Blade\Support\Str;
 use InvalidArgumentException;
-use Swoft\Blade\Contracts\Arrayable;
-use Swoft\Blade\Engines\EngineResolver;
+use Poolbang\Blade\Contracts\Arrayable;
+use Poolbang\Blade\Engines\EngineResolver;
 
 class Factory
 {
@@ -17,13 +17,13 @@ class Factory
 
     /**
      * The engine implementation.
-     * @var \Swoft\Blade\Engines\EngineResolver
+     * @var \Poolbang\Blade\Engines\EngineResolver
      */
     protected $engines;
 
     /**
      * The view finder implementation.
-     * @var \Swoft\Blade\ViewFinderInterface
+     * @var \Poolbang\Blade\ViewFinderInterface
      */
     protected $finder;
 
@@ -51,8 +51,8 @@ class Factory
 
     /**
      * Create a new view factory instance.
-     * @param  \Swoft\Blade\Engines\EngineResolver $engines
-     * @param  \Swoft\Blade\ViewFinderInterface    $finder
+     * @param  \Poolbang\Blade\Engines\EngineResolver $engines
+     * @param  \Poolbang\Blade\ViewFinderInterface    $finder
      * @return void
      */
     public function __construct(EngineResolver $engines, ViewFinderInterface $finder)
@@ -68,7 +68,7 @@ class Factory
      * @param  string $path
      * @param  array  $data
      * @param  array  $mergeData
-     * @return \Swoft\Blade\View
+     * @return \Poolbang\Blade\View
      */
     public function file($path, $data = [], $mergeData = [])
     {
@@ -82,7 +82,7 @@ class Factory
      * @param  string $view
      * @param  array  $data
      * @param  array  $mergeData
-     * @return \Swoft\Blade\View
+     * @return \Poolbang\Blade\View
      */
     public function make($view, $data = [], $mergeData = [])
     {
@@ -174,7 +174,7 @@ class Factory
      * @param  string $view
      * @param  string $path
      * @param  array  $data
-     * @return \Swoft\Blade\View
+     * @return \Poolbang\Blade\View
      */
     protected function viewInstance($view, $path, $data)
     {
@@ -200,7 +200,7 @@ class Factory
     /**
      * Get the appropriate view engine for the given path.
      * @param  string $path
-     * @return \Swoft\Blade\Engines\EngineInterface
+     * @return \Poolbang\Blade\Engines\EngineInterface
      * @throws \InvalidArgumentException
      */
     public function getEngineFromPath($path)
@@ -375,7 +375,7 @@ class Factory
 
     /**
      * Get the engine resolver instance.
-     * @return \Swoft\Blade\Engines\EngineResolver
+     * @return \Poolbang\Blade\Engines\EngineResolver
      */
     public function getEngineResolver()
     {
@@ -384,7 +384,7 @@ class Factory
 
     /**
      * Get the view finder instance.
-     * @return \Swoft\Blade\ViewFinderInterface
+     * @return \Poolbang\Blade\ViewFinderInterface
      */
     public function getFinder()
     {
@@ -393,7 +393,7 @@ class Factory
 
     /**
      * Set the view finder instance.
-     * @param  \Swoft\Blade\ViewFinderInterface $finder
+     * @param  \Poolbang\Blade\ViewFinderInterface $finder
      * @return void
      */
     public function setFinder(ViewFinderInterface $finder)

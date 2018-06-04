@@ -1,5 +1,5 @@
 {
-    "name": "swoft/blade",
+    "name": "poolbang/blade",
 	    "keywords": [
         "php",
         "swoole",
@@ -16,7 +16,7 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Swoft\\Blade\\": "src/"
+            "Poolbang\\Blade\\": "src/"
         }
     }
 }

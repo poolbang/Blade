@@ -1,27 +1,27 @@
 <?php
 
-namespace Swoft\Blade;
+namespace Poolbang\Blade;
 
 use Exception;
 use Throwable;
 use ArrayAccess;
 use BadMethodCallException;
-use Swoft\Blade\Support\Str;
-use Swoft\Blade\Contracts\Arrayable;
-use Swoft\Blade\Contracts\Renderable;
-use Swoft\Blade\Engines\EngineInterface;
+use Poolbang\Blade\Support\Str;
+use Poolbang\Blade\Contracts\Arrayable;
+use Poolbang\Blade\Contracts\Renderable;
+use Poolbang\Blade\Engines\EngineInterface;
 
 class View implements ArrayAccess
 {
     /**
      * The view factory instance.
-     * @var \Swoft\Blade\Factory
+     * @var \Poolbang\Blade\Factory
      */
     protected $factory;
 
     /**
      * The engine implementation.
-     * @var \Swoft\Blade\Engines\EngineInterface
+     * @var \Poolbang\Blade\Engines\EngineInterface
      */
     protected $engine;
 
@@ -45,8 +45,8 @@ class View implements ArrayAccess
 
     /**
      * Create a new view instance.
-     * @param  \Swoft\Blade\Factory                 $factory
-     * @param  \Swoft\Blade\Engines\EngineInterface $engine
+     * @param  \Poolbang\Blade\Factory                 $factory
+     * @param  \Poolbang\Blade\Engines\EngineInterface $engine
      * @param  string                               $view
      * @param  string                               $path
      * @param  mixed                                $data
@@ -228,7 +228,7 @@ class View implements ArrayAccess
 
     /**
      * Get the view factory instance.
-     * @return \Swoft\Blade\Factory
+     * @return \Poolbang\Blade\Factory
      */
     public function getFactory()
     {
@@ -237,7 +237,7 @@ class View implements ArrayAccess
 
     /**
      * Get the view's rendering engine.
-     * @return \Swoft\Blade\Engines\EngineInterface
+     * @return \Poolbang\Blade\Engines\EngineInterface
      */
     public function getEngine()
     {
@@ -330,7 +330,7 @@ class View implements ArrayAccess
      * Dynamically bind parameters to the view.
      * @param  string $method
      * @param  array  $parameters
-     * @return \Swoft\Blade\View
+     * @return \Poolbang\Blade\View
      * @throws \BadMethodCallException
      */
     public function __call($method, $parameters)

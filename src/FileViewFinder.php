@@ -1,15 +1,15 @@
 <?php
 
-namespace Swoft\Blade;
+namespace Poolbang\Blade;
 
 use InvalidArgumentException;
-use Swoft\Blade\Filesystem;
+use Poolbang\Blade\Filesystem;
 
 class FileViewFinder implements ViewFinderInterface
 {
     /**
      * The filesystem instance.
-     * @var \Swoft\Blade\Filesystem
+     * @var \Poolbang\Blade\Filesystem
      */
     protected $files;
 
@@ -39,7 +39,7 @@ class FileViewFinder implements ViewFinderInterface
 
     /**
      * Create a new file view loader instance.
-     * @param  \Swoft\Blade\Filesystem $files
+     * @param  \Poolbang\Blade\Filesystem $files
      * @param  array                   $paths
      * @param  array                   $extensions
      * @return void
@@ -237,7 +237,7 @@ class FileViewFinder implements ViewFinderInterface
 
     /**
      * Get the filesystem instance.
-     * @return \Swoft\Blade\Filesystem
+     * @return \Poolbang\Blade\Filesystem
      */
     public function getFilesystem()
     {

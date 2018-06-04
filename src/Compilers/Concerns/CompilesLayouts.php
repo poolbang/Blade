@@ -1,8 +1,8 @@
 <?php
 
-namespace Swoft\Blade\Compilers\Concerns;
+namespace Poolbang\Blade\Compilers\Concerns;
 
-use Swoft\Blade\Factory as ViewFactory;
+use Poolbang\Blade\Factory as ViewFactory;
 
 trait CompilesLayouts
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Swoft\Blade\Compilers\Concerns;
+namespace Poolbang\Blade\Compilers\Concerns;
 
 trait CompilesStacks
 {

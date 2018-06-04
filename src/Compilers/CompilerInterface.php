@@ -1,6 +1,6 @@
 <?php
 
-namespace Swoft\Blade\Compilers;
+namespace Poolbang\Blade\Compilers;
 
 interface CompilerInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Swoft\Blade\Compilers;
+namespace Poolbang\Blade\Compilers;
 
-use Swoft\Blade\Support\Arr;
-use Swoft\Blade\Support\Str;
+use Poolbang\Blade\Support\Arr;
+use Poolbang\Blade\Support\Str;
 
 class BladeCompiler extends Compiler implements CompilerInterface
 {

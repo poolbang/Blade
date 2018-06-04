@@ -1,6 +1,6 @@
 <?php
 
-namespace Swoft\Blade\Concerns;
+namespace Poolbang\Blade\Concerns;
 
 use InvalidArgumentException;
 

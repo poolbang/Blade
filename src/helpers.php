@@ -62,17 +62,17 @@ if (!function_exists('blade')) {
      * @param string      $template
      * @param array       $data
      *
-     * @return \Swoft\Http\Message\Server\Response
+     * @return \Poolbang\Http\Message\Server\Response
      */
     function blade(string $template, array $data = [])
     {
         /**
-         * @var \Swoft\Blade\Factory               $view
-         * @var \Swoft\Http\Message\Server\Response $response
+         * @var \Poolbang\Blade\Factory               $view
+         * @var \Poolbang\Http\Message\Server\Response $response
          */
-        $factory     = \Swoft\App::getBean('blade');
-        $response = \Swoft\Core\RequestContext::getResponse();
-        $content = $factory->make(\Swoft\App::getAlias($template), $data)->render();
+        $factory     = \Poolbang\App::getBean('blade');
+        $response = \Poolbang\Core\RequestContext::getResponse();
+        $content = $factory->make(\Poolbang\App::getAlias($template), $data)->render();
         $response = $response->withContent($content)->withoutHeader('Content-Type')->withAddedHeader('Content-Type', 'text/html');
         return $response;
     }

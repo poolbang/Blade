@@ -6,7 +6,7 @@
  * Time: 23:57
  */
 
-namespace Swoft\Blade\Bean\Annotation;
+namespace Poolbang\Blade\Bean\Annotation;
 
 /**
  * @Annotation

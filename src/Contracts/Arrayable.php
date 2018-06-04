@@ -1,6 +1,6 @@
 <?php
 
-namespace Swoft\Blade\Contracts;
+namespace Poolbang\Blade\Contracts;
 
 interface Arrayable
 {

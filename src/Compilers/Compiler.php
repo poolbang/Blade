@@ -1,16 +1,16 @@
 <?php
 
-namespace Swoft\Blade\Compilers;
+namespace Poolbang\Blade\Compilers;
 
 use InvalidArgumentException;
-use Swoft\Blade\Filesystem;
+use Poolbang\Blade\Filesystem;
 
 abstract class Compiler
 {
     /**
      * The Filesystem instance.
      *
-     * @var \Swoft\Blade\Filesystem
+     * @var \Poolbang\Blade\Filesystem
      */
     protected $files;
 
@@ -24,7 +24,7 @@ abstract class Compiler
     /**
      * Create a new compiler instance.
      *
-     * @param  \Swoft\Blade\Filesystem  $files
+     * @param  \Poolbang\Blade\Filesystem  $files
      * @param  string  $cachePath
      * @return void
      *

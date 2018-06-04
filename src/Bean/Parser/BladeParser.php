@@ -6,11 +6,11 @@
  * Time: 0:15
  */
 
-namespace Swoft\Blade\Bean\Parser;
+namespace Poolbang\Blade\Bean\Parser;
 
 use Swoft\Bean\Parser\AbstractParser;
-use Swoft\Blade\Bean\Annotation\Blade;
-use Swoft\Blade\Bean\Collector\BladeCollector;
+use Poolbang\Blade\Bean\Annotation\Blade;
+use Poolbang\Blade\Bean\Collector\BladeCollector;
 
 class BladeParser extends AbstractParser
 {

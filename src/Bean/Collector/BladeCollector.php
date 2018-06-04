@@ -6,15 +6,15 @@
  * Time: 0:12
  */
 
-namespace Swoft\Blade\Bean\Collector;
+namespace Poolbang\Blade\Bean\Collector;
 
 use Swoft\App;
 use Swoft\Bean\CollectorInterface;
-use Swoft\Blade\Bean\Annotation\Blade;
+use Poolbang\Blade\Bean\Annotation\Blade;
 
 /**
  * Class BladeCollector
- * @package Swoft\Blade\Bean\Collector
+ * @package Poolbang\Blade\Bean\Collector
  */
 class BladeCollector
 {

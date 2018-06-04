@@ -1,9 +1,9 @@
 <?php
 
-namespace Swoft\Blade\Concerns;
+namespace Poolbang\Blade\Concerns;
 
 use Countable;
-use Swoft\Blade\Support\Arr;
+use Poolbang\Blade\Support\Arr;
 
 trait ManagesLoops
 {

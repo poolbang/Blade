@@ -1,17 +1,17 @@
 <?php
 
-namespace Swoft\Blade\Engines;
+namespace Poolbang\Blade\Engines;
 
 use Exception;
 use ErrorException;
-use Swoft\Blade\Support\Arr;
-use Swoft\Blade\Compilers\CompilerInterface;
+use Poolbang\Blade\Support\Arr;
+use Poolbang\Blade\Compilers\CompilerInterface;
 
 class CompilerEngine extends PhpEngine
 {
     /**
      * The Blade compiler instance.
-     * @var \Swoft\Blade\Compilers\CompilerInterface
+     * @var \Poolbang\Blade\Compilers\CompilerInterface
      */
     protected $compiler;
 
@@ -23,7 +23,7 @@ class CompilerEngine extends PhpEngine
 
     /**
      * Create a new Blade view engine instance.
-     * @param  \Swoft\Blade\Compilers\CompilerInterface $compiler
+     * @param  \Poolbang\Blade\Compilers\CompilerInterface $compiler
      * @return void
      */
     public function __construct(CompilerInterface $compiler)
@@ -86,7 +86,7 @@ class CompilerEngine extends PhpEngine
 
     /**
      * Get the compiler implementation.
-     * @return \Swoft\Blade\Compilers\CompilerInterface
+     * @return \Poolbang\Blade\Compilers\CompilerInterface
      */
     public function getCompiler()
     {

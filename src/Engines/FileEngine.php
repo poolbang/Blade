@@ -1,6 +1,6 @@
 <?php
 
-namespace Swoft\Blade\Engines;
+namespace Poolbang\Blade\Engines;
 
 class FileEngine implements EngineInterface
 {
