@@ -11,6 +11,7 @@ namespace Poolbang\Blade\Bean\Wrapper\Extend;
 
 use Swoft\Bean\Wrapper\Extend\WrapperExtendInterface;
 use Poolbang\Blade\Bean\Annotation\Blade;
+
 /**
  * Controller extend
  */

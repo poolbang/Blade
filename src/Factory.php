@@ -8,6 +8,16 @@ use InvalidArgumentException;
 use Poolbang\Blade\Contracts\Arrayable;
 use Poolbang\Blade\Engines\EngineResolver;
 
+/**
+ * Class ViewRenderer - Render PHP view scripts
+ *
+ * @package Swoft\Web
+ * @uses      View
+ * @version   2017年08月14日
+ * @author    inhere <in.798@qq.com>
+ * @copyright Copyright 2010-2016 Swoft software
+ * @license   PHP Version 7.x {@link http://www.php.net/license/3_0.txt}
+ */
 class Factory
 {
     use Concerns\ManagesComponents,

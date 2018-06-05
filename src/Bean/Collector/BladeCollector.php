@@ -13,8 +13,7 @@ use Swoft\Bean\CollectorInterface;
 use Poolbang\Blade\Bean\Annotation\Blade;
 
 /**
- * Class BladeCollector
- * @package Poolbang\Blade\Bean\Collector
+ *  @uses      BladeCollector
  */
 class BladeCollector
 {

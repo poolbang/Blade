@@ -8,6 +8,7 @@
 
 namespace Poolbang\Blade\Bootstrap;
 
+use Poolband\Blade\Base\View;
 use Swoft\Bean\Annotation\BootBean;
 use Poolbang\Blade\Factory;
 use Poolbang\Blade\Compilers\BladeCompiler;
@@ -26,20 +27,10 @@ class CoreBean
      */
     public function beans():array
     {
-        $path = ['/var/www/swoft/resources/views/'];
-        $cachePath = '/var/www/swoft/runtime/views/';
-        $file = new Filesystem();
-        $compiler = new BladeCompiler($file, $cachePath);
-        $resolver = new EngineResolver();
-        $resolver->register('blade', function () use ($compiler){
-            return new CompilerEngine($compiler);
-        });
-        $factory = new Factory($resolver, new FileViewFinder($file, $path));
-        $factory->addExtension('tpl', 'blade');
 
         return [
             'blade'         => [
-                'class'     => $factory,
+                'class'     => View::class,
             ],
         ];
     }

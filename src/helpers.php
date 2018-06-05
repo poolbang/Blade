@@ -1,4 +1,10 @@
 <?php
+use Poolbang\Blade\Factory;
+use Poolbang\Blade\Compilers\BladeCompiler;
+use Poolbang\Blade\Engines\CompilerEngine;
+use Poolbang\Blade\Engines\EngineResolver;
+use Poolbang\Blade\Filesystem;
+use Poolbang\Blade\FileViewFinder;
 
 if (!function_exists('e')) {
     /**
@@ -62,17 +68,28 @@ if (!function_exists('blade')) {
      * @param string      $template
      * @param array       $data
      *
-     * @return \Poolbang\Http\Message\Server\Response
+     * @return \Swoft\Http\Message\Server\Response
      */
     function blade(string $template, array $data = [])
     {
+
+        $path = ['/var/www/swoft/resources/views/'];
+        $cachePath = '/var/www/swoft/runtime/views/';
+        $file = new Filesystem();
+        $compiler = new BladeCompiler($file, $cachePath);
+        $resolver = new EngineResolver();
+        $resolver->register('blade', function () use ($compiler){
+            return new CompilerEngine($compiler);
+        });
+        $factory = new Factory($resolver, new FileViewFinder($file, $path));
+        $factory->addExtension('tpl', 'blade');
+        $response = \Swoft\Core\RequestContext::getResponse();
+        $content = $factory->make($template, $data)->render();
         /**
-         * @var \Poolbang\Blade\Factory               $view
-         * @var \Poolbang\Http\Message\Server\Response $response
+         * @var \Swoft\Http\Message\Server\Response $response
          */
-        $factory     = \Poolbang\App::getBean('blade');
-        $response = \Poolbang\Core\RequestContext::getResponse();
-        $content = $factory->make(\Poolbang\App::getAlias($template), $data)->render();
+        $response = \Swoft\Core\RequestContext::getResponse();
+//        $content  = $view->render(\Swoft\App::getAlias($template), $data);
         $response = $response->withContent($content)->withoutHeader('Content-Type')->withAddedHeader('Content-Type', 'text/html');
         return $response;
     }
